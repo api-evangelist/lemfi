@@ -1,0 +1,22 @@
+generated: '2026-08-25'
+method: searched
+source: https://lemfi.com/en-us/
+plan_count: 0
+note: >-
+  LemFi publishes NO plans or pricing page of any kind — neither developer/API tiers
+  nor a consumer fee schedule. /en-us/pricing, /en-us/fees, /en-us/rates and
+  /en-us/exchange-rates all return HTTP 404 from the Nuxt site. Pricing is expressed
+  only as a live FX quote inside the mobile apps and in the homepage rate converter
+  widget, alongside marketing language about low/zero transfer fees; there is no
+  published rate card and no machine-readable pricing surface. There is nothing to
+  record here beyond the verified zero.
+probed:
+- url: https://lemfi.com/en-us/pricing
+  status: 404
+- url: https://lemfi.com/en-us/fees
+  status: 404
+- url: https://lemfi.com/en-us/rates
+  status: 404
+- url: https://lemfi.com/en-us/exchange-rates
+  status: 404
+plans: []

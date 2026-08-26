@@ -1,0 +1,68 @@
+generated: '2026-08-25'
+method: searched
+source: https://trust.lemfi.com/
+url: https://trust.lemfi.com/
+http_status: 200
+hosted_by: Secureframe
+hosted_by_note: >-
+  trust.lemfi.com is a CNAME to lemfi.secureframetrust.com — the trust center is a
+  Secureframe-hosted single-page app. Every /.well-known/* and /openapi.json path on
+  this host returns HTTP 200 with the same 151KB HTML shell, so it is an SPA catch-all,
+  not a document surface. Recorded as a miss for well-known purposes.
+certifications:
+- name: SOC 2 Type II
+  evidence: Listed on the trust center with a SOC 2 Type II Certificate and a Bridge Letter
+  document_access: request-required
+- name: PCI DSS
+  level: Level 1
+  evidence: Listed on the trust center with a PCI DSS Certificate and PCI DSS AOC Report
+  document_access: request-required
+- name: ISO 27001
+  evidence: Listed on the trust center as a compliance framework
+  document_access: request-required
+- name: GDPR
+  evidence: Listed on the trust center as a compliance framework
+  document_access: public
+documents:
+  request_required:
+  - SOC 2 Type II Certificate
+  - SOC 2 Type II Bridge Letter
+  - PCI DSS Certificate
+  - PCI DSS AOC Report
+  public:
+  - Privacy Policy
+  - Terms of Service
+control_families:
+  change_management:
+  - Configuration and Asset Management Policy
+  - Environment segregation
+  - Restricted use of production data
+  - Change Management Policy
+  availability:
+  - Business Continuity and Disaster Recovery Policy
+  - Annual backup restoration testing
+  organizational:
+  - Acceptable Use Policy
+  - Information Security Policy
+  - Cybersecurity insurance
+  confidentiality:
+  - Data Classification Policy
+  - Data Retention and Disposal Policy
+  vulnerability_management:
+  - Annual third-party penetration testing
+  - Vulnerability and Patch Management Policy
+  incident_response:
+  - Incident Response Plan
+  - Periodic tabletop exercises
+  risk_assessment:
+  - Vendor Risk Management Policy
+  - Risk Assessment and Treatment Policy
+  network_security:
+  - Network Security Policy
+  access_security:
+  - Complex passwords with MFA
+  - Encryption in transit, TLS 1.2+
+  - Restricted SSH and key access to production
+  data_protection:
+  - AES-256 encryption at rest
+  - AWS infrastructure hosting

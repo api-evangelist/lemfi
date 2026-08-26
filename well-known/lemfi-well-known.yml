@@ -1,0 +1,116 @@
+generated: '2026-08-25'
+method: probed
+source: live HTTP probes of every LemFi host resolved on 2026-08-25
+note: >-
+  NO well-known document is served anywhere on LemFi's estate. lemfi.com 302s every
+  /.well-known/* path into a locale prefix (/en-us/... or /en-gb/...) and then returns
+  404 from the Nuxt SPA. trust.lemfi.com is a Secureframe-hosted SPA whose catch-all
+  answers HTTP 200 with the same 151KB HTML shell for EVERY path probed, including
+  /openapi.json and /.well-known/agent-card.json — that is an SPA shell, not a
+  document, and it is recorded as a miss. api.lemonade.finance is an AWS API Gateway
+  that answers 403 {"message":"Missing Authentication Token"} on every path. Because
+  nothing returned a real document, NO WellKnown or SecurityTxt pointer is wired into
+  apis.yml — this file records a verified absence.
+hosts:
+- host: lemfi.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: blog.lemfi.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: trust.lemfi.com
+  note: >-
+    Secureframe SPA catch-all. Every path below returned HTTP 200 with an identical
+    151,053-byte text/html body (the trust center shell). Treated as a MISS, not a hit.
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: null
+    result: spa-shell-not-a-document
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: null
+    result: spa-shell-not-a-document
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: null
+    result: spa-shell-not-a-document
+  - path: /.well-known/api-catalog
+    status: 200
+    file: null
+    result: spa-shell-not-a-document
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    file: null
+    result: spa-shell-not-a-document
+  - path: /.well-known/agent-card.json
+    status: 200
+    file: null
+    result: spa-shell-not-a-document
+  - path: /.well-known/agent.json
+    status: 200
+    file: null
+    result: spa-shell-not-a-document
+- host: api.lemonade.finance
+  note: >-
+    AWS API Gateway (d-h3yyhaa8ek.execute-api.us-east-2.amazonaws.com), the private
+    backend for the LemFi consumer apps. Every path answers 403 with
+    {"message":"Missing Authentication Token"}.
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 403
+    file: null
+  - path: /.well-known/agent.json
+    status: 403
+    file: null
+- host: app.lemonade.finance
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null

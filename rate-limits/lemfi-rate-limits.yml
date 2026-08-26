@@ -1,0 +1,16 @@
+generated: '2026-08-25'
+method: searched
+source: https://lemfi.com/en-us/
+limit_count: 0
+note: >-
+  No rate limits are documented, because LemFi publishes no API and no developer
+  documentation in which limits could be stated. The only LemFi-controlled API host
+  found, api.lemonade.finance, is an AWS API Gateway serving the consumer mobile apps;
+  it answers 403 {"message":"Missing Authentication Token"} on every unauthenticated
+  path and returns no RateLimit-*, X-RateLimit-* or Retry-After headers to an
+  anonymous caller, so nothing could be observed at runtime either.
+probed:
+- url: https://api.lemonade.finance/
+  status: 403
+  observed_rate_limit_headers: []
+rate_limits: []

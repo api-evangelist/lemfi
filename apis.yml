@@ -49,7 +49,7 @@ created: '2026-08-25'
 modified: '2026-08-25'
 tags:
 - Company
-- Financial-Services
+- Financial Services
 - Fintech
 - Payments
 - Remittances
@@ -69,6 +69,7 @@ tags_raw:
 - Consumer Finance
 - Mobile Banking
 - eSIM
+- Financial-Services
 apis: []
 maintainers:
 - FN: Kin Lane

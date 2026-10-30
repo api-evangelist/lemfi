@@ -64,5 +64,98 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-LemFi is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.hiive.com/securities/lemfi-stock
+LemFi (formerly Lemonade Finance) is a London-headquartered cross-border payments and remittance fintech built for immigrant communities, operating as a regulated Electronic Money Institution in the UK and as a FinCEN-registered money services business in the US through Pomelo Two US LLC (NMLS 2523778). Its consumer mobile apps let customers hold multi-currency balances, receive local bank details in their country of residence, request money, buy eSIM data, and send international transfers to 30+ receive markets across Africa, Asia, Europe and Latin America via direct integrations with tier-1 local banks. LemFi is a consumer-app company: as of this profile it publishes no developer portal, no public API reference, no OpenAPI or other machine-readable contract, no SDKs and no sandbox. What it does publish publicly is a Secureframe-hosted trust center naming SOC 2 Type II, PCI DSS Level 1, ISO 27001 and GDPR, and a formal vulnerability disclosure policy run through Inspectiv.
+
+**Areas:** Company · Financial Services · Fintech · Payments · Remittances · Cross-Border Payments · Money Transfer · Consumer Finance · Mobile Banking · eSIM
+
+## LemFi on APIs.io
+
+Everything profiled for LemFi is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/lemfi/](https://apis.io/providers/lemfi/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Lemfi Domain Security](https://apis.io/security/lemfi/lemfi-domain-security/)
+- [Lemfi Trust Center](https://apis.io/security/lemfi/lemfi-trust-center/)
+- [Lemfi Vulnerability Disclosure](https://apis.io/security/lemfi/lemfi-vulnerability-disclosure/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Lemfi Plans Pricing](https://apis.io/plans/lemfi/lemfi-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Lemfi Rate Limits](https://apis.io/rate-limits/lemfi/lemfi-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://lemfi.com/en-us/)
+- [Support](https://lemfi.com/en-us/contact-us)
+- [Blog](https://blog.lemfi.com/)
+- [Security](https://lemfi.com/en-us/legal/vulnerability-disclosure-policy)
+- [Terms of service](https://lemfi.com/en-us/legal/terms)
+- [Privacy policy](https://lemfi.com/en-us/legal/mobile-privacy)
+
+## API Evangelist rating
+
+**Kin Score 19.3** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 36.8 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 33.9** — Payments
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/lemfi/](https://apis.io/providers/lemfi/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for LemFi: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/lemfi/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
